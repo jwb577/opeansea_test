@@ -20,8 +20,9 @@ class NamelinkDB:
         if name not in self.hlink_names.keys():
             emptyResponse = {
                 'name': name,
-                'url' None
+                'url': None
             }
+        
             return json.dumps(emptyResponse)
         else:
             response = {
